@@ -1,12 +1,12 @@
 <?php
 
 
-use Awaistech\Larpack\Middleware\SuperAdmin;
+use App\Http\Middleware\SuperAdmin;
 use Illuminate\Support\Facades\Route;
-use Awaistech\Larpack\Controllers\package\EnvController;
-use Awaistech\Larpack\Controllers\package\Contactcontroller;
-use Awaistech\Larpack\Controllers\package\ActivityLogController;
-use Awaistech\Larpack\Controllers\package\MaintenanceController;
+use App\Http\Controllers\package\EnvController;
+use App\Http\Controllers\package\Contactcontroller;
+use App\Http\Controllers\package\ActivityLogController;
+use App\Http\Controllers\package\MaintenanceController;
 
 
 Route::prefix('/admin')->group(function () {

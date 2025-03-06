@@ -1,9 +1,9 @@
 <?php
 
-namespace Awaistech\Larpack\Controllers\Package;
+namespace App\Http\Controllers\package;
 
 use App\Http\Controllers\Controller;
-use Awaistech\Larpack\Models\seo;
+use App\Models\seo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 

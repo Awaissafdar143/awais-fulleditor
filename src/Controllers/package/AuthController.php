@@ -1,6 +1,6 @@
 <?php
 
-namespace Awaistech\Larpack\Controllers\Package;
+namespace App\Http\Controllers\package;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;

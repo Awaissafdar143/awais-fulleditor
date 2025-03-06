@@ -1,4 +1,4 @@
-@extends('full-Admin-Panel.backend.layout')
+@extends('larpack::full-Admin-Panel.layout.backend')
 @section('content')
     <div class="container">
     <div class="row">

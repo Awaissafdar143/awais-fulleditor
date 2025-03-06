@@ -1,7 +1,7 @@
 <?php
 
-use Awaistech\Larpack\Controllers\package\Contactcontroller;
-use Awaistech\Larpack\Middleware\CheckMaintenanceMode;
+use App\Http\Controllers\package\Contactcontroller;
+use App\Http\Middleware\CheckMaintenanceMode;
 use Illuminate\Support\Facades\Route;
 
 

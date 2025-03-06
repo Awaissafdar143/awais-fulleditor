@@ -1,6 +1,6 @@
 <?php
 
-namespace Awaistech\Larpack\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Activitylog\Traits\LogsActivity;

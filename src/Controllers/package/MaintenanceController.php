@@ -1,10 +1,10 @@
 <?php
 
-namespace Awaistech\Larpack\Controllers\Package;
+namespace App\Http\Controllers\package;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Awaistech\Larpack\Models\Setting;
+use App\Models\Setting;
 
 class MaintenanceController extends Controller
 {

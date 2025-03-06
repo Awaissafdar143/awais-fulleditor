@@ -1,4 +1,4 @@
-@extends('full-Admin-Panel.layout.backend')
+@extends('larpack::full-Admin-Panel.layout.backend')
 
 @push('title')
     <title>Login Muhammad Awais</title>
@@ -108,18 +108,21 @@
             @if (session('message'))
                 <h6 class="alert alert-success">{{ session('message') }}</h6>
             @endif
+            @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li class="alert alert-danger">{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
             <form action="{{ route('logincheck') }}" method="post" id="contact-form">
                 @csrf
                 <label for="uname">Username</label>
                 <input type="text" class="inp" name="username" required>
-                @error('username')
-                    <li class="text-danger">{{ $message }}</li>
-                @enderror
                 <label for="psw">Password</label>
                 <input type="password" class="inp" name="password" required>
-                @error('password')
-                    <li class="text-danger">{{ $message }}</li>
-                @enderror
                 <button type="submit">Enter</button>
             </form>
         </div>
