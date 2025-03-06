@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\package;
+namespace Awaistech\Larpack\Controllers\package;
 
-use App\Http\Controllers\Controller;
+use Awaistech\Larpack\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
-use App\Models\blog;
+use Awaistech\Larpack\Models\blog;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller

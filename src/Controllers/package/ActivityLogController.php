@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\package;
+namespace Awaistech\Larpack\Controllers\package;
 
-use App\Http\Controllers\Controller;
+use Awaistech\Larpack\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Spatie\Activitylog\Models\Activity;

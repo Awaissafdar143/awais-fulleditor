@@ -1,11 +1,11 @@
 <?php
 
-use App\Http\Middleware\AuthChheck;
+use Awaistech\Larpack\Middleware\AuthChheck;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\package\AuthController;
-use App\Http\Controllers\package\BlogController;
-use App\Http\Controllers\package\Contactcontroller;
-use App\Http\Controllers\package\seoController;
+use Awaistech\Larpack\Controllers\package\AuthController;
+use Awaistech\Larpack\Controllers\package\BlogController;
+use Awaistech\Larpack\Controllers\package\Contactcontroller;
+use Awaistech\Larpack\Controllers\package\seoController;
 
 Route::prefix('/admin')->group(function () {
     Route::controller(AuthController::class)->group(function () {

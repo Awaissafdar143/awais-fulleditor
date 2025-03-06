@@ -20,14 +20,6 @@
 
                 </div>
             </div>
-            {{-- <div class="mt-5 col-12">
-            <div class="title" style="text-align: left">
-                <a href="{{ route('addseo') }}" class="text-white btn wow fadeInUp" data-wow-delay=".5s" type="submit"
-                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;background-color:#01456f;">
-                    <span>Add Me</span>
-                </a>
-            </div>
-        </div> --}}
             <div class="col-md-12">
                 <table class="table table-bordered table-striped">
                     <thead>
