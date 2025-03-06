@@ -23,6 +23,6 @@ class ActivityLogController extends Controller
             ->paginate(10); // paginate if needed
 
         // Pass the logs to the view.
-        return view('larpack::full-Admin-Panel.activity_logs.index', compact('logs'));
+        return view('full-Admin-Panel.activity_logs.index', compact('logs'));
     }
 }

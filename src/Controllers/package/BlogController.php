@@ -2,7 +2,7 @@
 
 namespace Awaistech\Larpack\Controllers\Package;
 
-use Illuminate\Routing\Controller;
+use Awaistech\Larpack\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Awaistech\Larpack\Models\blog;
 use Illuminate\Http\Request;
@@ -18,10 +18,10 @@ class BlogController extends Controller
             $blogs = blog::orderBy('created_at', 'desc')->get();
         }
         $blogs = blog::all();
-        return view('larpack::full-Admin-Panel.backend.blog.dashboard',compact('blogs'));
+        return view('full-Admin-Panel.backend.blog.dashboard',compact('blogs'));
     }
     public function add(){
-        return view('larpack::full-Admin-Panel.backend.blog.addblog');
+        return view('full-Admin-Panel.backend.blog.addblog');
     }
     public function addpost(request $request){
         $extension="";
@@ -51,7 +51,7 @@ class BlogController extends Controller
     }
     public function update($id){
         $blogs=blog::where('id',$id)->get();
-        return view('larpack::full-Admin-Panel.backend.blog.blogupdate',compact('blogs'));
+        return view('full-Admin-Panel.backend.blog.blogupdate',compact('blogs'));
     }
     public function updatepost(request $request,$id){
         $extension="";

@@ -12,11 +12,11 @@ class AuthController extends Controller
 {
     public function login()
     {
-        return view('larpack::full-Admin-Panel.Auth.login');
+        return view('full-Admin-Panel.Auth.login');
     }
     public function AdminDashboard()
     {
-        return view('larpack::full-Admin-Panel.backend.admindashboard');
+        return view('full-Admin-Panel.backend.admindashboard');
     }
     public function logincheck(Request $request)
     {
@@ -32,7 +32,7 @@ class AuthController extends Controller
     }
     public function Profile()
     {
-        return view('larpack::full-Admin-Panel.Auth.profile');
+        return view('full-Admin-Panel.Auth.profile');
     }
     public function updateprofile(Request $request)
     {

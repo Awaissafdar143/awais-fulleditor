@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
-use App\Models\Setting;
+use Awaistech\Larpack\Models\Setting;
 
 class CheckMaintenanceMode
 {

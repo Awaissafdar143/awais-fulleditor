@@ -1,4 +1,4 @@
-@extends('larpack::full-Admin-Panel.layout.backend')
+@extends('full-Admin-Panel.layout.backend')
 @section('content')
     <div class="container mt-5">
         <h1>Edit Maintenance Page</h1>
