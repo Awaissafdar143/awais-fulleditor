@@ -4,7 +4,7 @@
   "type": "library",
   "require": {
     "spatie/activitylog": "^2.4",
-    "illuminate/support": "^10.0"
+    "illuminate/support": "^11.0"
   },
   "license": "MIT",
   "autoload": {
