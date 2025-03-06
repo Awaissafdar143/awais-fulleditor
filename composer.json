@@ -4,7 +4,7 @@
   "type": "library",
   "require": {
     "spatie/activitylog": "^2.4",
-    "illuminate/support": "^5.5"
+    "illuminate/support": "^11.0 || ^12.0 || ^13.0"
   },
   "license": "MIT",
   "autoload": {
@@ -15,7 +15,7 @@
   "authors": [
     {
       "name": "Awais Safdar",
-      "email": "awaissafdar412@gmail.com"
+      "email": "awaissafdar111@gmail.com"
     }
   ],
   "config": {
