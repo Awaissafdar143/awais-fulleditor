@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Awaistech\Larpack\Models;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 use Illuminate\Database\Eloquent\Model;

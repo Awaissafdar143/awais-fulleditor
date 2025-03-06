@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\package;
+namespace Awaistech\Larpack\Controllers\Package;
 
 use App\Http\Controllers\Controller;
-use App\Models\Contact;
+use Awaistech\Larpack\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
