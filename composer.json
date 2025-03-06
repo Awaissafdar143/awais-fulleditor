@@ -2,10 +2,10 @@
   "name": "awaistech/larpack",
   "description": "AwaisAdmin is a powerful and easy-to-use Laravel package that provides a fully functional admin panel for managing blogs, SEO settings, and contact messages. It is designed to streamline content management while offering essential SEO tools and an intuitive contact message system.",
   "type": "library",
-  "require": {
+ "require": {
     "spatie/activitylog": "^2.4",
-    "illuminate/support": "^5.5"
-  },
+    "illuminate/support": "^11.0 || ^12.0 || ^13.0"
+},
   "license": "MIT",
   "autoload": {
     "psr-4": {

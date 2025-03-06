@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'awaistech/larpack',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '18b7ca04ef898aff8c74e328064163c818049119',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'awaistech/larpack' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '18b7ca04ef898aff8c74e328064163c818049119',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
