@@ -17,17 +17,15 @@ class PackageServiceProvider extends ServiceProvider
         // Load Routes
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
         
-        // Load Views
-        $this->loadViewsFrom(__DIR__.'/../views/full-Admin-Panel', 'larpack');
+        // Load Views (Make sure your views are inside 'resources/views')
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'larpack');
         
         // Load Migrations
-        $this->loadMigrationsFrom(__DIR__.'/../migrations');
-        
-        // Load Middleware (if needed, register it in Kernel manually)
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         // Publish Config
         $this->publishes([
             __DIR__.'/../config/larpack.php' => config_path('larpack.php'),
-        ], 'config');
+        ], 'larpack-config');
     }
 }
