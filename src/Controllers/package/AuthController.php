@@ -2,7 +2,7 @@
 
 namespace Awaistech\Larpack\Controllers\Package;
 
-use Awaistech\Larpack\Controllers\Controller;
+use Illuminate\Routing\Controller;
 use Awaistech\Larpack\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

@@ -2,6 +2,7 @@
 
 use Awaistech\Larpack\Middleware\AuthChheck;
 use Illuminate\Support\Facades\Route;
+
 use Awaistech\Larpack\Controllers\package\AuthController;
 use Awaistech\Larpack\Controllers\package\BlogController;
 use Awaistech\Larpack\Controllers\package\Contactcontroller;

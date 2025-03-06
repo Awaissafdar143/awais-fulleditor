@@ -31,8 +31,8 @@ class PackageServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__ . '/routes/admin.php');
         $this->loadRoutesFrom(__DIR__ . '/routes/superadmin.php');
 
-        // Load Views
-        $this->loadViewsFrom(__DIR__ . '/views/full-Admin-Panel', 'larpack');
+        // Load Views from the 'resources/views/full-Admin-Panel' directory
+        $this->loadViewsFrom(resource_path('views/full-Admin-Panel'), 'larpack');
 
         // Load Migrations
         $this->loadMigrationsFrom(__DIR__ . '/migrations');
@@ -44,7 +44,7 @@ class PackageServiceProvider extends ServiceProvider
 
         // Publish Views (Optional)
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/full-Admin-Panel'),
+            __DIR__ . '/../resources/views' => resource_path('views'),
         ], 'larpack-views');
 
         // Publish Migrations (Optional)
