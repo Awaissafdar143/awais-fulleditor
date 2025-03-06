@@ -1,6 +1,6 @@
 <?php
 
-namespace Awaistech\Larpack\Controllers\package;
+namespace Awaistech\Larpack\Controllers\Package;
 
 use Awaistech\Larpack\Controllers\Controller;
 use Awaistech\Larpack\Models\User;
@@ -12,11 +12,11 @@ class AuthController extends Controller
 {
     public function login()
     {
-        return view('full-Admin-Panel.Auth.login');
+        return view('larpack::full-Admin-Panel.Auth.login');
     }
     public function AdminDashboard()
     {
-        return view('full-Admin-Panel.backend.admindashboard');
+        return view('larpack::full-Admin-Panel.backend.admindashboard');
     }
     public function logincheck(Request $request)
     {
@@ -32,7 +32,7 @@ class AuthController extends Controller
     }
     public function Profile()
     {
-        return view('full-Admin-Panel.Auth.profile');
+        return view('larpack::full-Admin-Panel.Auth.profile');
     }
     public function updateprofile(Request $request)
     {

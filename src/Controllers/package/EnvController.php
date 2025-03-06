@@ -1,6 +1,6 @@
 <?php
 
-namespace Awaistech\Larpack\Controllers\package;
+namespace Awaistech\Larpack\Controllers\Package;
 
 use Awaistech\Larpack\Controllers\Controller;
 use Illuminate\Http\Request;

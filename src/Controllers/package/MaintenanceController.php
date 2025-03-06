@@ -1,6 +1,6 @@
 <?php
 
-namespace Awaistech\Larpack\Controllers\package;
+namespace Awaistech\Larpack\Controllers\Package;
 
 use Awaistech\Larpack\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -13,7 +13,7 @@ class MaintenanceController extends Controller
     {
         $content = Setting::get('maintenance_content', '');
         $enabled = Setting::get('maintenance_enabled', '0');
-        return view('full-Admin-Panel.admin.maintenance_edit', compact('content', 'enabled'));
+        return view('larpack::full-Admin-Panel.admin.maintenance_edit', compact('content', 'enabled'));
     }
     
     // Update the maintenance settings

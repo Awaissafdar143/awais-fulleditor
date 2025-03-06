@@ -44,7 +44,7 @@ class PackageServiceProvider extends ServiceProvider
 
         // Publish Views (Optional)
         $this->publishes([
-            __DIR__ . '/views' => resource_path('views/vendor/larpack'),
+            __DIR__ . '/../resources/views' => resource_path('views/full-Admin-Panel'),
         ], 'larpack-views');
 
         // Publish Migrations (Optional)

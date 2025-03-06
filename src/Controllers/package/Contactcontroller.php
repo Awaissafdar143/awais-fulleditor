@@ -1,6 +1,6 @@
 <?php
 
-namespace Awaistech\Larpack\Controllers\package;
+namespace Awaistech\Larpack\Controllers\Package;
 
 use Awaistech\Larpack\Controllers\Controller;
 use Awaistech\Larpack\Models\Contact;
@@ -19,7 +19,7 @@ class Contactcontroller extends Controller
             // Only show active records
             $datas = Contact::orderBy('created_at', 'desc')->get();
         }
-        return view('full-Admin-Panel.backend.contact.dashboard', compact('datas'));
+        return view('larpack::full-Admin-Panel.backend.contact.dashboard', compact('datas'));
     }
     public function Contactdelete($id)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Awaistech\Larpack\Controllers\package;
+namespace Awaistech\Larpack\Controllers\Package;
 
 use Awaistech\Larpack\Controllers\Controller;
 use Awaistech\Larpack\Models\seo;
@@ -12,11 +12,11 @@ class seoController extends Controller
     public function seodashboard()
     {
         $seos = seo::all();
-        return view('full-Admin-Panel.backend.seo.dashboard', compact('seos'));
+        return view('larpack::full-Admin-Panel.backend.seo.dashboard', compact('seos'));
     }
     public function add()
     {
-        return view('full-Admin-Panel.backend.seo.addseo');
+        return view('larpack::full-Admin-Panel.backend.seo.addseo');
     }
     public function addpost(request $request)
     {
@@ -46,7 +46,7 @@ class seoController extends Controller
     public function update($id)
     {
         $seos = seo::where('id', $id)->get();
-        return view('full-Admin-Panel.backend.seo.seoupdate', compact('seos'));
+        return view('larpack::full-Admin-Panel.backend.seo.seoupdate', compact('seos'));
         // return redirect()->back()->with('message','seo Has been deleted');
     }
     public function updatepost(request $request, $id)

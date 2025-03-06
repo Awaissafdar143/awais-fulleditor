@@ -1,6 +1,6 @@
 <?php
 
-namespace Awaistech\Larpack\Controllers\package;
+namespace Awaistech\Larpack\Controllers\Package;
 
 use Awaistech\Larpack\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -23,6 +23,6 @@ class ActivityLogController extends Controller
             ->paginate(10); // paginate if needed
 
         // Pass the logs to the view.
-        return view('full-Admin-Panel.activity_logs.index', compact('logs'));
+        return view('larpack::full-Admin-Panel.activity_logs.index', compact('logs'));
     }
 }
