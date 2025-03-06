@@ -31,6 +31,13 @@
       ]
     }
   },
+  "scripts": {
+    "post-autoload-dump": [
+        "@php artisan vendor:publish --tag=larpack-config",
+        "@php artisan migrate"
+    ]
+},
+
     "minimum-stability": "dev",
     "prefer-stable": true
 }
