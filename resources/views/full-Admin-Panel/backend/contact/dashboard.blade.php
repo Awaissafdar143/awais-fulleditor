@@ -45,14 +45,11 @@
                                 <td>{{ $data->email }}</td>
                                 <td>{{ $data->date }}</td>
                                 @php
-                                    // Clean up the service string if needed
                                     $serviceName = str_replace(['["', '"]'], '', $data->service);
                                 @endphp
                                 <td>{{ $serviceName }}</td>
                                 <td>
-                                    {{-- Display a short version of the message --}}
                                     {{ Str::limit($data->message, 20) }}
-                                    <!-- View button to open a modal with the full message -->
                                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
                                         data-bs-target="#messageModal" data-message="{{ $data->message }}">
                                         View
@@ -61,7 +58,7 @@
                                 @if (auth()->user()->role === 'super')
                                     <td>
                                         @if ($data->trashed())
-                                            {{-- Show when the record was soft-deleted --}}
+                                            
                                             {{ $data->deleted_at ? $data->deleted_at->diffForHumans() : '' }}
                                         @else
                                             Active

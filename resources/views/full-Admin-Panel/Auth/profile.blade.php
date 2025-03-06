@@ -18,25 +18,19 @@
                                 <label for="formGroupExampleInput2" class="form-label">Name</label>
                                 <input type="text" class="form-control" name="name" value="{{ Auth::user()->name }}"
                                     id="formGroupExampleInput2" placeholder="Enter input placeholder">
-                                @error('name')
-                                    <small class="text-danger"{{ $message }}</small>
-                                    @enderror
+                              
                             </div>
                             <div class="mb-3">
                                 <label for="formGroupExampleInput" class="form-label">Username</label>
                                 <input type="text" class="form-control" name="email" value="{{ Auth::user()->email }}"
                                     id="formGroupExampleInput" placeholder="Example input placeholder">
-                                @error('email')
-                                    <small class="text-danger"{{ $message }}</small>
-                                    @enderror
+                              
                             </div>
                             <div class="mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">Password</label>
                                 <input type="text" class="form-control" name="password" id="formGroupExampleInput2"
                                     placeholder="Enter Your Password">
-                                @error('password')
-                                    <small class="text-danger"{{ $message }}</small>
-                                    @enderror
+                               
                             </div>
                             <div class="mb-3">
                                 <input type="submit" class="form-control" value="submit Now" id="formGroupExampleInput2">
