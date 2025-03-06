@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Awaistech\Larpack\Seeders;
 
 use App\Models\seo;
 use Illuminate\Database\Seeder;
