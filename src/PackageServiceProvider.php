@@ -33,7 +33,6 @@ class PackageServiceProvider extends ServiceProvider
 
         // Load Views
         $this->loadViewsFrom(__DIR__ . '/views/full-Admin-Panel', 'larpack');
-        $this->loadViewsFrom(__DIR__ . '/views/full-Admin-Panel', 'larpack');
 
         // Load Migrations
         $this->loadMigrationsFrom(__DIR__ . '/migrations');
@@ -52,6 +51,8 @@ class PackageServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/migrations/' => database_path('migrations'),
         ], 'larpack-migrations');
+
+        // Register Middlewares
         $router = $this->app['router'];
         $router->aliasMiddleware('authchheck', AuthChheck::class);
         $router->aliasMiddleware('check.maintenance', CheckMaintenanceMode::class);
