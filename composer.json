@@ -4,7 +4,7 @@
   "type": "library",
   "require": {
     "spatie/activitylog": "^2.4",
-    "illuminate/support": "^5.5"
+    "illuminate/support": "^10.0"
   },
   "license": "MIT",
   "autoload": {
@@ -26,8 +26,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Awaistech\\Larpack\\YourPackageServiceProvider"
+        "Awaistech\\Larpack\\LarpackServiceProvider"
       ]
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
