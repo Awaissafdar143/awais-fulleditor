@@ -9,6 +9,9 @@ use Awaistech\Larpack\Middleware\AuthChheck;
 use Awaistech\Larpack\Middleware\CheckMaintenanceMode;
 use Awaistech\Larpack\Middleware\RedirectIfLogin;
 use Awaistech\Larpack\Middleware\SuperAdmin;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Artisan;
+
 
 class PackageServiceProvider extends ServiceProvider
 {
@@ -51,7 +54,15 @@ class PackageServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/migrations/' => database_path('migrations'),
         ], 'larpack-migrations');
+        // Load Seeders
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/../database/seeders/' => database_path('seeders'),
+            ], 'larpack-seeders');
 
+            // Run seeders automatically after migration
+            Artisan::call('db:seed', ['--class' => 'DatabaseSeeder']);
+        }
         // Register Middlewares
         $router = $this->app['router'];
         $router->aliasMiddleware('authchheck', AuthChheck::class);
