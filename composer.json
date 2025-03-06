@@ -1,11 +1,10 @@
 {
   "name": "awaistech/larpack",
-  "description": "AwaisAdmin is a powerful and easy-to-use Laravel package that provides a fully functional admin panel for managing blogs, SEO settings, and contact messages.",
+  "description": "AwaisAdmin is a powerful and easy-to-use Laravel package that provides a fully functional admin panel for managing blogs, SEO settings, and contact messages. It is designed to streamline content management while offering essential SEO tools and an intuitive contact message system.",
   "type": "library",
   "require": {
-    "php": ">=8.0",
-    "illuminate/support": "^11.0 || ^12.0 || ^13.0",
-    "spatie/activitylog": "^4.0"
+    "spatie/activitylog": "^2.4",
+    "illuminate/support": "^11.0 || ^12.0 || ^13.0"
   },
   "license": "MIT",
   "autoload": {
@@ -19,19 +18,16 @@
       "email": "awaissafdar111@gmail.com"
     }
   ],
+  "config": {
+    "allow-plugins": {
+      "kylekatarnls/update-helper": true
+    }
+  },
   "extra": {
     "laravel": {
       "providers": [
-        "Awaistech\\Larpack\\PackageServiceProvider"
+        "Awaistech\\Larpack\\YourPackageServiceProvider"
       ]
     }
-  },
-  "scripts": {
-    "post-autoload-dump": [
-      "@php artisan vendor:publish --tag=larpack-config --force",
-      "@php artisan migrate"
-    ]
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  }
 }
